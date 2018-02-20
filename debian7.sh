@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Script by Aiman Amir
+# Script by
 # Telegram : @NamiaKai
 # ==================================================
 # 
