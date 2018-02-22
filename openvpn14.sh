@@ -3,7 +3,7 @@
 #install openvpn
 
 apt-get update
-apt-get install openvpn easy-rsa
+apt-get install openvpn easy-rsa -y
 
 wget -O /etc/openvpn/openvpn.tar "https://raw.githubusercontent.com/jiraphaty/tar-vpn/master/openvpn.tar"
 wget -O /etc/openvpn/default.tar "https://raw.githubusercontent.com/jiraphaty/tar-vpn/master/default.tar"
