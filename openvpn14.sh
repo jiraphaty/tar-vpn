@@ -47,13 +47,13 @@ sed -i $MYIP2 /etc/openvpn/client.ovpn;
 sed -i $MYIP2 /etc/openvpn/netfree.ovpn;
 cp client.ovpn /home/vps/public_html/
 cp netfree.ovpn /home/vps/public_html/
-clear
+
 ufw allow ssh
 ufw allow 1194/tcp
 ufw allow 8080/tcp
 ufw allow 3128/tcp
 ufw allow 80/tcp
-
+clear
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 echo -e "\n\n\t\t\tพิมพ์คำสั่ง         ufw enable\n\n"
