@@ -47,4 +47,9 @@ sed -i $MYIP2 /etc/openvpn/client.ovpn;
 sed -i $MYIP2 /etc/openvpn/netfree.ovpn;
 cp client.ovpn /home/vps/public_html/
 cp netfree.ovpn /home/vps/public_html/
+ufw allow ssh
+ufw allow 1194/tcp
+ufw allow 8080/tcp
+ufw allow 3128/tcp
+ufw allow 80/tcp
 
