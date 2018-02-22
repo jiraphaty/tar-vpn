@@ -56,9 +56,10 @@ ufw allow 80/tcp
 
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
-echo -e "\t\t\tพิมพ์คำสั่ง         ufw enable"
-echo -e "\t\t\tกด    y  เพื่อตกลง"
-echo -e "\t\t\tรีเครื่องหนึ่งรอบ โดยใช้คำสั่ง reboot"
-echo "ดาวน์โหลดไฟล์แบบไม่มีโฮส  : http://$MYIP/client.ovpn"
-echo "ดาวน์โหลดไฟล์แบบมีโฮส  : http://$MYIP/netfree.ovpn"
+echo -e "\t\t\tพิมพ์คำสั่ง         ufw enable\n\n"
+echo -e "\t\t\tกด    y  เพื่อตกลง\n\n"
+echo -e "\t\t\tรีเครื่องหนึ่งรอบ โดยใช้คำสั่ง reboot\n\n"
+echo -e "ดาวน์โหลดไฟล์แบบไม่มีโฮส  : http://$MYIP/client.ovpn\n\n"
+echo -e "ดาวน์โหลดไฟล์แบบมีโฮส  : http://$MYIP/netfree.ovpn\n\n"
+
 
