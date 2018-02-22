@@ -1,7 +1,7 @@
 ﻿#!/bin/bash
 #script by jiraphat yuenying
 #install openvpn
-
+apt-get update
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 
@@ -47,9 +47,18 @@ sed -i $MYIP2 /etc/openvpn/client.ovpn;
 sed -i $MYIP2 /etc/openvpn/netfree.ovpn;
 cp client.ovpn /home/vps/public_html/
 cp netfree.ovpn /home/vps/public_html/
+clear
 ufw allow ssh
 ufw allow 1194/tcp
 ufw allow 8080/tcp
 ufw allow 3128/tcp
 ufw allow 80/tcp
+
+MYIP=$(wget -qO- ipv4.icanhazip.com);
+MYIP2="s/xxxxxxxxx/$MYIP/g";
+echo -e "\t\t\tพิมพ์คำสั่ง         ufw enable"
+echo -e "\t\t\tกด    y  เพื่อตกลง"
+echo -e "\t\t\tรีเครื่องหนึ่งรอบ โดยใช้คำสั่ง reboot"
+echo "ดาวน์โหลดไฟล์แบบไม่มีโฮส  : http://$MYIP/client.ovpn"
+echo "ดาวน์โหลดไฟล์แบบมีโฮส  : http://$MYIP/netfree.ovpn"
 
