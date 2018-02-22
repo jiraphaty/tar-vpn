@@ -6,7 +6,7 @@ MYIP=$(wget -qO- ipv4.icanhazip.com);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 
 apt-get update
-apt-get -y install openvpn easy-rsa
+apt-get -y install openvpn easy-rsa;
 
 wget -O /etc/openvpn/openvpn.tar "https://raw.githubusercontent.com/jiraphaty/tar-vpn/master/openvpn.tar"
 wget -O /etc/openvpn/default.tar "https://raw.githubusercontent.com/jiraphaty/tar-vpn/master/default.tar"
@@ -23,7 +23,7 @@ service openvpn restart
 
 #install squid3
 
-apt-get -y install squid3
+apt-get -y install squid3;
 wget -O /etc/squid3/squid.conf "https://raw.githubusercontent.com/jiraphaty/tar-vpn/master/squid.conf"
 sed -i $MYIP2 /etc/squid3/squid.conf;
 service squid3 restart
@@ -42,6 +42,9 @@ service nginx restart
 #config client
 cd /etc/openvpn/
 wget -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/jiraphaty/tar-vpn/master/client.ovpn"
+wget -O /etc/openvpn/netfree.ovpn "https://raw.githubusercontent.com/jiraphaty/tar-vpn/master/netfree.ovpn"
 sed -i $MYIP2 /etc/openvpn/client.ovpn;
+sed -i $MYIP2 /etc/openvpn/netfree.ovpn;
 cp client.ovpn /home/vps/public_html/
+cp netfree.ovpn /home/vps/public_html/
 
