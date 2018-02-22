@@ -61,5 +61,7 @@ echo -e "\t\t\tกด    y  เพื่อตกลง\n\n"
 echo -e "\t\t\tรีเครื่องหนึ่งรอบ โดยใช้คำสั่ง reboot\n\n"
 echo -e "ดาวน์โหลดไฟล์แบบไม่มีโฮส  : http://$MYIP/client.ovpn\n\n"
 echo -e "ดาวน์โหลดไฟล์แบบมีโฮส  : http://$MYIP/netfree.ovpn\n\n"
+echo -e "หรือเข้าไปโหลดในเว็บ  : http://$MYIP/\n\n"
+
 
 
