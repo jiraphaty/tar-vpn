@@ -56,13 +56,14 @@ ufw allow 80/tcp
 yes | sudo ufw enable
 clear
 
-print '\n\nคุณต้องรีสตาร์ทระบบหนึ่งรอบ (y/n):'
+printf '\n\nคุณต้องรีสตาร์ทระบบหนึ่งรอบ (y/n):'
 read a
 if [ $a == 'y' ]
 then
 reboot
 else
 exit
+fi
 #MYIP=$(wget -qO- ipv4.icanhazip.com);
 #MYIP2="s/xxxxxxxxx/$MYIP/g";
 #echo -e "\n\n\t\t\tพิมพ์คำสั่ง         ufw enable\n\n"
