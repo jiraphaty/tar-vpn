@@ -53,6 +53,7 @@ ufw allow 1194/tcp
 ufw allow 8080/tcp
 ufw allow 3128/tcp
 ufw allow 80/tcp
+yes | sudo ufw enable
 clear
 #MYIP=$(wget -qO- ipv4.icanhazip.com);
 #MYIP2="s/xxxxxxxxx/$MYIP/g";
