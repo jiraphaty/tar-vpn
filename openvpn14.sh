@@ -56,7 +56,7 @@ ufw allow 80/tcp
 yes | sudo ufw enable
 clear
 
-print -e "\n\nคุณต้องรีสตาร์ทระบบหนึ่งรอบ (y/n):"
+print '\n\nคุณต้องรีสตาร์ทระบบหนึ่งรอบ (y/n):'
 read a
 if [ $a == 'y' ]
 then
