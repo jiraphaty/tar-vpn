@@ -55,6 +55,7 @@ ufw allow 3128/tcp
 ufw allow 80/tcp
 yes | sudo ufw enable
 clear
+reboot
 #MYIP=$(wget -qO- ipv4.icanhazip.com);
 #MYIP2="s/xxxxxxxxx/$MYIP/g";
 #echo -e "\n\n\t\t\tพิมพ์คำสั่ง         ufw enable\n\n"
