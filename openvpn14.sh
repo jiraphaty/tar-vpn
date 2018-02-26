@@ -55,8 +55,13 @@ ufw allow 3128/tcp
 ufw allow 80/tcp
 yes | sudo ufw enable
 clear
+printf '###############################\n'
+printf '# Script by Jiraphat Yuenting #\n'
+printf '###############################\n'
 
-printf '\n\nคุณต้องรีสตาร์ทระบบหนึ่งรอบ (y/n):'
+printf '\n\nเพิ่ม user โดยใช้คำสั่ง useradd'
+printf '\n\nตั้งรหัสโดย ใช้คำสั่ง passwd'
+printf '\n\nคุณจำเป็นต้องรีสตาร์ทระบบหนึ่งรอบ (y/n):'
 read a
 if [ $a == 'y' ]
 then
