@@ -40,13 +40,13 @@ service squid3 restart
 #service nginx restart
 
 #config client
-#cd /etc/openvpn/
-#wget -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/jiraphaty/tar-vpn/master/client.ovpn"
-#wget -O /etc/openvpn/netfree.ovpn "https://raw.githubusercontent.com/jiraphaty/tar-vpn/master/netfree.ovpn"
-#sed -i $MYIP2 /etc/openvpn/client.ovpn;
-#sed -i $MYIP2 /etc/openvpn/netfree.ovpn;
-#cp client.ovpn /home/vps/public_html/
-#cp netfree.ovpn /home/vps/public_html/
+cd /etc/openvpn/
+wget -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/jiraphaty/tar-vpn/master/client.ovpn"
+wget -O /etc/openvpn/netfree.ovpn "https://raw.githubusercontent.com/jiraphaty/tar-vpn/master/netfree.ovpn"
+sed -i $MYIP2 /etc/openvpn/client.ovpn;
+sed -i $MYIP2 /etc/openvpn/netfree.ovpn;
+cp client.ovpn /root/
+cp netfree.ovpn /root/
 
 ufw allow ssh
 ufw allow 1194/tcp
@@ -84,7 +84,8 @@ printf '#                              #\n'
 printf '#                             #\n'
 printf '#    พิมพ์ menu เพื่อใช้คำสั่งต่างๆ   #\n'
 printf '###############################\n'
-
+echo -e "ดาวน์โหลดไฟล์แบบไม่มีโฮส  : /root/client.ovpn\n\n"
+echo -e "ดาวน์โหลดไฟล์แบบมีโฮส  : /root/netfree.ovpn\n\n"
 printf '\n\nเพิ่ม user โดยใช้คำสั่ง useradd'
 printf '\n\nตั้งรหัสโดย ใช้คำสั่ง passwd'
 printf '\n\nคุณจำเป็นต้องรีสตาร์ทระบบหนึ่งรอบ (y/n):'
