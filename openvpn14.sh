@@ -79,9 +79,9 @@ chmod +x about
 clear
 printf '###############################\n'
 printf '# Script by Jiraphat Yuenting #\n'
-printf '###############################\n'
+printf '#                              #\n'
 
-printf '###############################\n'
+printf '#                             #\n'
 printf '#    พิมพ์ menu เพื่อใช้คำสั่งต่างๆ   #\n'
 printf '###############################\n'
 
