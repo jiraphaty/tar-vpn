@@ -83,7 +83,7 @@ printf '#                              #\n'
 
 printf '#                             #\n'
 printf '#    พิมพ์ menu เพื่อใช้คำสั่งต่างๆ   #\n'
-printf '###############################\n'
+printf '###############################\n\n'
 echo -e "ดาวน์โหลดไฟล์แบบไม่มีโฮส  : /root/client.ovpn\n\n"
 echo -e "ดาวน์โหลดไฟล์แบบมีโฮส  : /root/netfree.ovpn\n\n"
 printf '\n\nเพิ่ม user โดยใช้คำสั่ง useradd'
