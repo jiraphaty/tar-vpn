@@ -78,7 +78,7 @@ chmod +x speedtest
 chmod +x about
 clear
 printf '###############################\n'
-printf '# Script by Jiraphat Yuenting #\n'
+printf '# Script by Jiraphat Yuenying #\n'
 printf '#                              #\n'
 
 printf '#                             #\n'
